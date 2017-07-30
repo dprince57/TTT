@@ -99,7 +99,7 @@ void getInput(){
     tempS[i-1] = 88;
     status -=1;
     j = checkWin(HUPLAYER,openS);
-    if(j == 1){printf("Holy Hell you beat the AI!\n");}
+    if(j == 1){status = 0;printf("Holy Hell you beat the AI!\n");}
 }
 int checkWin(int player,int b[9]) {
     if (b[0] == player && b[1] == player && b[2] == player ||
